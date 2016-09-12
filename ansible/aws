@@ -1,0 +1,7 @@
+[ckan]
+52.77.247.25
+
+[ckan:vars]
+ansible_ssh_user=ubuntu
+ansible_ssh_port=22
+server_type=test

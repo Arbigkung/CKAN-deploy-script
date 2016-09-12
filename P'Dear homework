@@ -1,0 +1,22 @@
+ต้องการ deploy CKAN  ด้วย Ansible ผ่านทาง Jenkins โดยใช้ Docker container
+
+
+CKAN
+คือ open source DMS เขียนด้วย Python
+https://github.com/ckan/ckan
+ฐานข้อมูลใช้ PostgreSQL และ Solr
+ให้รันทุกอย่างใน Docker Container
+Ansible
+เขียน Ansible ในการเตรียมเซิร์ฟเวอร์ที่จะทำการ deploy CKAN บน Ubuntu 14.04.4 LTS เช่น
+อัพเดต package เป็นเวอร์ชันล่าสุด
+ลง Docker
+เขียน Ansible ในการ deploy CKAN ลงบนเซิร์ฟเวอร์ที่เตรียมเสร็จเรียบร้อย
+Jenkins
+ให้รัน Jenkins บน Docker container
+สร้าง Jenkins Job ให้ทำการ deploy CKAN ลงบนเซิร์ฟเวอร์ที่เราสร้างรอไว้
+
+
+ทำเสร็จแล้ว ให้อัพโหลดสิ่งที่ทำทั้งหมดขึ้นบน github พร้อม document วิธีการใช้งาน
+โจทย์ถ้าสงสัยตรงไหนสามารถอีเมลมาถามได้ตลอดนะครับ
+
+ansible-playbook -i aws -vvvvv init.yml

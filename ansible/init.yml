@@ -1,0 +1,6 @@
+---
+- hosts: ckan
+  sudo: yes
+
+  roles:
+    - { role: init-sev }
